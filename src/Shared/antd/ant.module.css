@@ -1,0 +1,19 @@
+.borderinput {
+  /* background: transparent; */
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  height: 40px;
+  border-radius: 0px;
+  border: 1px solid #8080804f;
+  width: 100%;
+}
+.borderinput:focus {
+  box-shadow: none !important;
+  border-color: #7c542d;
+}
+.borderinput:hover {
+  box-shadow: none !important;
+  border-color: #7c542d;
+}

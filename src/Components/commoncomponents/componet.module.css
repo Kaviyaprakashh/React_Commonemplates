@@ -1,0 +1,29 @@
+.items_dropdown,
+.items_dropdown:hover,
+.items_dropdown:active {
+  background-color: var(--whiteColor) !important;
+  border: 1px solid #aca7a7 !important;
+  color: var(--blackColor) !important;
+  margin-bottom: 2px !important;
+  text-align: center !important;
+  border-radius: 2px !important;
+  padding: 2px 11px !important;
+  font-size: 17px !important;
+}
+.itemspage {
+  font-size: 17px;
+  font-family: var(--authheader);
+  color: #4d2b12;
+}
+.items {
+  font-size: 13px;
+}
+.contents {
+  border: 1px solid gray !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+}
+.contents a:hover {
+  background-color: #4d2b12 !important;
+  color: white !important;
+}

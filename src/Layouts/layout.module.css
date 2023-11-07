@@ -1,0 +1,22 @@
+.layoutcontainer {
+  background-image: url(../Assests/Images/bg3.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+}
+.outletcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* top: 50%; */
+}
+.headerbar {
+  padding: 0px 20px;
+  background: white;
+}
+.child {
+  /* background-color: antiquewhite; */
+  min-height: calc(100vh - 70px);
+  margin: 10px 0px;
+}

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "labelfont";
+  src: url(../Assests/Fonts/PlaypenSans-Regular.ttf);
+}
+.headernav {
+  /* background-color: #130115; */
+  background-color: #c0a392;
+  padding: 10px 3% !important;
+
+  font-family: var(--mediumtext);
+  color: white;
+}
+.logoimg {
+  width: 50px;
+  height: 50px;
+}
+.header_toggle {
+  /* border: 3px solid #423858 !important; */
+  border: none !important;
+  border-radius: 0px !important;
+  font-size: 23px !important;
+  padding: 2px 5px !important;
+  color: white !important;
+}
+.header_toggle:focus {
+  box-shadow: none !important;
+}
+.navblocks {
+  display: flex;
+  justify-content: space-between;
+}
+.main_container {
+  width: 100%;
+  display: flex;
+
+  align-items: flex-start;
+}
+.navbaritems {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navactivelinks {
+  color: #4d2b12 !important;
+  font-family: "labelfont";
+  font-size: 15px !important;
+}
+.navlinks {
+  color: white !important;
+  font-family: "labelfont";
+  font-size: 15px !important;
+}
+.navlinks:hover {
+  color: #4d2b12 !important;
+}
+
+.navdropdown {
+  width: 100%;
+}
+
+.dropdownlink {
+  color: white !important;
+  font-family: "labelfont";
+  font-size: 15px !important;
+}
+
+.dropdownlink:hover {
+  color: #4d2b12 !important;
+}
+@media (max-width: 991px) {
+  .main_container {
+    flex-direction: column;
+    margin: 0px 2%;
+  }
+  .navblocks {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start !important;
+    gap: 5px;
+  }
+  .navbaritems {
+    height: 200px;
+    margin: 6px 0px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navdropdown .dropdown-menu {
+    border: none !important;
+    border-radius: 0px !important;
+  }
+}

@@ -1,13 +1,162 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@font-face {
+  font-family: "authheader";
+  src: url(./Assests/Fonts/KaushanScript-Regular.ttf);
+}
+@font-face {
+  font-family: "labelfont";
+  src: url(./Assests/Fonts/PlaypenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "authlabels";
+  src: url(./Assests/Fonts/Cookie-Regular.ttf);
+}
+@font-face {
+  font-family: "thintext";
+  src: url(./Assests/Fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Regulartext";
+  src: url(./Assests/Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Mediumtext";
+  src: url(./Assests/Fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "boldtext";
+  src: url(./Assests/Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "darktext";
+  src: url(./Assests/Fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "medsans";
+  src: url(./Assests/Fonts/PlaypenSans-Medium.ttf);
+}
+@font-face {
+  font-family: "headerfont";
+  src: url(./Assests/Fonts/PlaypenSans-Medium.ttf);
+}
+:root {
+  --WhiteColor: white;
+  --BlackColor: #212529;
+  --headings: "boldtext";
+  --headersize: 35px;
+  --labelsize: 25px;
+  --authheader: "authheader";
+  --authlabel: "authlabels";
+  --smalltext: "thintext";
+  --mediumtext: "Mediumtext";
+  --marginzero: 0px;
+  --btnradious: 5px;
+  --btnheight: 40px;
+  --btnfontsize: 16px;
+  --authbtncolor: #ff8d74;
+  --authbtnbg: #00abd1;
+  --headerColor: #792f00;
+  --headerbg: #feebe7;
+  --medsans: "medsans";
+  --headerfont: "headerfont";
+  --Regulartext: "Regulartext";
+}
+.errormsg {
+  color: #b90000;
+  font-size: 12px;
+  font-family: "labelfont";
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.main_container {
+  padding: 0px 3%;
+  width: 100%;
+}
+.contents {
+  border: 1px solid gray !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+}
+.contents a:hover {
+  background-color: #4d2b12 !important;
+  color: white !important;
+}
+
+/* ant d switch  */
+.ant-switch-checked {
+  background-color: #f76782 !important;
+}
+.ant-switch {
+  background-color: #00ac99;
+}
+.ant-switch-checked:hover {
+  background-color: #f76782 !important;
+}
+.ant-switch:hover {
+  background-color: #00ac99;
+}
+.ant-select-selector {
+  border: none !important;
+}
+
+/* modal redius  */
+.modal-content {
+  border-radius: 0px !important;
+}
+.modalcontainer {
+  margin: 15px;
+}
+.form-label {
+  font-family: var(--Regulartext);
+  color: #4a4642;
+}
+
+/* common btns  */
+.submitbtn {
+  /* border: 2px solid black;
+  color: black; */
+  color: white;
+  border: none;
+  transition: 1s ease;
+  background: transparent;
+  font-family: "medsans";
+  height: 40px;
+  background-color: #dca287;
+  width: 150px;
+}
+.submitbtn:hover {
+  color: white;
+  background-color: #362419;
+}
+
+.cancelbtn {
+  /* border: 2px solid black;
+  color: black; */
+  color: white;
+  border: none;
+  transition: 1s ease;
+  background: transparent;
+  font-family: "medsans";
+  height: 40px;
+  background-color: #362419;
+
+  width: 150px;
+}
+.cancelbtn:hover {
+  color: white;
+  background-color: #dca287;
 }

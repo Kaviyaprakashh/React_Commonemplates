@@ -1,0 +1,189 @@
+section {
+  /* background: #dce7eb; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.trash {
+  /* background: #fd4451; */
+  width: 66px;
+  height: 80px;
+  display: inline-block;
+  margin: 0 auto;
+  content: url(../Assests/Icons/trash);
+  position: relative;
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.trash:after {
+  content: "";
+  position: absolute;
+  left: -99px;
+  right: 0;
+  bottom: -50px;
+  width: 300px;
+}
+.trash span {
+  position: absolute;
+  height: 12px;
+  background: #fd4451;
+  top: -19px;
+  left: -10px;
+  right: -10px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: rotate(0deg);
+  transition: transform 250ms;
+  transform-origin: 19% 100%;
+  /* transform: rotate(-45deg); */
+  transition: transform 250ms;
+  animation: actiontrashlid 1s;
+}
+@keyframes actiontrashlid {
+  0% {
+    transform: translateX(0px) rotate(00deg);
+    top: -20px;
+    display: none;
+    /* left: 0px; */
+  }
+  80% {
+    transform: translateX(0px) rotate(-135deg);
+    /* top: -20px; */
+    /* left: 20px; */
+    display: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.trash span:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 7px;
+  background: #fd4451;
+  top: -10px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: rotate(0deg);
+  transition: transform 250ms;
+  transform-origin: 19% 100%;
+  left: 27px;
+}
+
+.trash i {
+  position: fixed;
+  width: 5px;
+  height: 50px;
+  background: #fff;
+  display: block;
+  margin: 15px 30px;
+  /* margin: 14px auto; */
+  border-radius: 5px;
+  /* display: none; */
+}
+.trash i:after {
+  content: "";
+  width: 5px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  left: -18px;
+  border-radius: 5px;
+}
+.trash i:before {
+  content: "";
+  width: 5px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  right: -18px;
+  border-radius: 5px;
+}
+
+.trashblock {
+  background: #0a0a0a91;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trash p {
+  /* height: 12px; */
+  position: absolute;
+  border-radius: 0px;
+  width: 13px;
+  content: url(../Assests/Icons/file.png);
+  /* top: 5px; */
+  background: transparent;
+  z-index: -9;
+  margin: 9px;
+  /* height: 20px; */
+
+  top: -2px;
+  /* z-index: -1; */
+  opacity: 0;
+  animation: file 0.8s;
+}
+@keyframes file {
+  0% {
+    top: -60px;
+    /* left: -30px; */
+    /* transform: rotate(139deg) translateX(-170px) rotate(256deg); */
+    overflow: hidden;
+    opacity: 1;
+    width: 50px;
+    /* opacity: 1; */
+  }
+  100% {
+    top: 0px;
+    /* transform: rotate(103deg) translateX(26px) rotate(255deg); */
+    overflow: hidden;
+    opacity: 1;
+    width: 50px;
+
+    /* opacity: 1; */
+  }
+}
+
+/* delbtn  */
+
+.trashcan {
+  display: flex;
+}
+.box1 {
+  width: 40px;
+  height: 20px;
+  background: #b22c2c;
+}
+.box2 {
+  width: 35px;
+  height: 20px;
+  background: #b22c2c;
+}
+.box3 {
+  width: 30px;
+  height: 20px;
+  background: #b22c2c;
+}
+.box4 {
+  width: 25px;
+  height: 20px;
+  background: #b22c2c;
+}

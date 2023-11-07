@@ -1,0 +1,42 @@
+.modalheader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: var(--headerfont);
+}
+.closeimg {
+  width: 18px;
+  height: 20px;
+}
+.closebtn {
+  border: none;
+  border-color: #4d2b12;
+  background: transparent;
+  padding: 0px 0px !important;
+  outline: none;
+  width: 30px;
+  height: 29px;
+  text-align: center;
+}
+.modalheadername {
+  color: #dca287;
+  font-family: "headerfont";
+  font-size: 25px !important;
+}
+.closebtn:hover {
+  background: #ffb6a4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.loginactionblock {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.confirmation_msg {
+  color: #4d2b12;
+  font-family: var(--medsans);
+  font-size: 19px;
+}

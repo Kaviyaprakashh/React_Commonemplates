@@ -1,0 +1,42 @@
+.notfoundbg {
+  /* background-color: #ffc3c3; */
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  background: linear-gradient(#f8d7d7, #dbdeff);
+
+  /* background-image: url(../../Assests/Images/not.jpg); */
+}
+.bannerimg {
+  width: 450px;
+  height: 450px;
+}
+.doll {
+  width: 500px;
+  height: 350px;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* top: 50%; */
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+.backbtn {
+  border: none;
+  outline: none;
+  background: #00aefa;
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 25px;
+  color: white;
+  font-family: var(--authlabel);
+}
+.msg {
+  color: crimson;
+  font-size: 35px;
+  font-family: var(--authlabel);
+}

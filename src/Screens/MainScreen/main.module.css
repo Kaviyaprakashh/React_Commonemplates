@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "headerfont";
+  src: url(../../Assests/Fonts/PlaypenSans-Medium.ttf);
+}
+@font-face {
+  font-family: "labelfont";
+  src: url(../../Assests/Fonts/PlaypenSans-Bold.ttf);
+}
+.headerblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+.headname {
+  color: #4d2b12;
+  font-family: "headerfont";
+  font-size: 25px !important;
+}
+.banner1 {
+  position: relative;
+  display: flex;
+  margin: 15px 0px;
+  height: 500px;
+  /* background-image: url(../../Assests/Images/dog2.jpg); */
+  /* height: 500px;
+  background-size: cover;
+  margin: 15px 0px;
+  background-attachment: fixed;
+  display: flex; */
+}
+.banner1::before {
+  background-image: url(../../Assests/Images/dog2.jpg);
+  content: "";
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+
+  background-attachment: fixed;
+  display: flex;
+
+  position: absolute;
+
+  opacity: 0.5;
+}
+.bannercontainer {
+  display: flex;
+  padding: 0px 3%;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.bannerblock {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.bannerhead {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "headerfont";
+  color: #4e3524;
+  transition-delay: 4s;
+  animation: 3s movein normal;
+}
+.bannersub {
+  color: #a0522d;
+  font-family: "headerfont";
+  animation: 3s movein normal;
+}
+.bannertext {
+  font-family: "headerfont";
+  line-height: 2.3;
+  animation: 3s movein normal;
+}
+@keyframes movein {
+  0% {
+    position: relative;
+    margin-left: 70%;
+    overflow: hidden;
+    width: 100%;
+  }
+  100% {
+    margin-left: 0%;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+.bannerbtn {
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: 0.5s ease;
+  width: 160px;
+  height: 50px;
+  font-family: "headerfont";
+  background: #dca287;
+  transition-delay: 2s;
+}
+.bannerbtn:hover {
+  background-color: #362419;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .bannerblock {
+    width: 80%;
+  }
+  .banner1 {
+    height: 600px;
+  }
+  .banner1::before {
+    height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .bannerblock {
+    width: 95%;
+  }
+  .bannerhead {
+    font-size: 30px;
+  }
+  .bannersub {
+    font-size: 20px;
+  }
+  .bannertext {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+}
+@media (max-width: 400px) {
+  .bannerblock {
+    width: 95%;
+  }
+  .bannerhead {
+    font-size: 23px;
+  }
+  .bannersub {
+    font-size: 18px;
+  }
+  .bannertext {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+}
+.addbtn {
+  /* border: 2px solid black;
+  color: black; */
+  color: white;
+  border: none;
+  transition: 2s ease;
+  background: transparent;
+  font-family: "medsans";
+  height: 40px;
+  background-color: #dca287;
+  width: 150px;
+}
+.addbtn:hover {
+  background-color: #362419;
+  color: white;
+}
+.addbtnicon {
+  width: 20px;
+  height: 20px;
+}
